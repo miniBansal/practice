@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style-type:none;
+    text-decoration: none;
+}
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.clear{
+    clear:both;
+}
+#sidebar{
+    width:15%;
+    height:100%;
+    background-color: #2E3648;
+    position: fixed;
+    top:0;
+    left:0;
+    color:#fff;
+}
+.sidebar-brand{
+    padding: 0.25% 30%;
+    color: #626ED4;
+    padding-bottom: 10%;
+}
+.sidebar-menu ul li a{
+    display:block;
+    color: #fff;
+    padding-left: 7%;
+    padding-bottom: 10%;
+}
+.sidebar-menu ul p{
+    display:block;
+    color: #fff;
+    padding-left: 5%;
+    padding-bottom: 10%;
+    padding-top:5%;
+    font-size: 70%;
+}
+.sidebar-menu li:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+.main-header{
+    position: fixed;
+    background-color: #36394C;
+    width: 100%;
+    height: 10%;
+}
+.header-left{
+    float: left;
+    width: 40%;
+    padding-top: 0.1%;
+    padding-left: 1%;
+    color: #fff;
+}
+.header-right{
+    float: right;
+    width: 60%;
+    padding:20px;
+    color: #fff;
+}
+input.search-bar{
+    width: 50%;
+    border-radius: 20px;
+    padding: 18px 10px;
+}
+#main-content{
+    width:85%;
+    float:right;
+    background-color: #222736;
+}
+.card-box{
+    float: left;
+    width: 21%;
+    margin-top: 120px;
+    background-color: #626ED4;
+    color: #fff;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 25px;
+}
+
