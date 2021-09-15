@@ -102,10 +102,14 @@ input.search-bar{           /*searchbar of navbar*/
     color: #fff;
 }
 .pro-table{
+    border-radius: 5px;
     width: 65%;
     float: left;
-    background-color: #36394C;
+    background-color: #2E3648;
     padding: 15px;
-    margin-left: 16px;
+    margin: 20px 0px 0px 17px;
     color: white;
+}
+table td{
+    padding: 25px 0px 0px 0px;
 }
