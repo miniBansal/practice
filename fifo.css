@@ -16,9 +16,9 @@
     color:#fff;
 }
 .sidebar-brand{   /*sidebar logo FIFO*/
-    padding: 0.25% 30%;
+    padding: 0.20% 30%;
     color: #626ED4;
-    padding-bottom: 10%;
+    padding-bottom: 1%;
 }
 .link-text{             /*space between sidebar icons and sidebar list content*/
     margin-left: 10%;
@@ -49,28 +49,120 @@
 }
 .header-left{               /*left part of navbarv(hamburger)*/
     float: left;
-    width: 40%;
-    padding-top: 0.1%;
+    width: 45%;
     padding-left: 1%;
     color: #fff;
 }
 
 .header-right{              /*right part of navbar*/
     float: right;
-    width: 60%;
-    padding:20px;
+    width: 55%;
+    padding:15px;
     color: #fff;
 }
 input.search-bar{           /*searchbar of navbar*/
     width: 20%;
-    height: 30px;
+    height: 27px;
     background-color: #363E54;
     border-radius: 20px;  
+    outline: none;
+}
+
+.lang-menu {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 0.4px;
+    position: fixed;
+    padding-left: 10px;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #363E54;
+    border: 1px solid #363E54;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    color: white;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #363E54;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+
+.ar:before {
+    background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+
+
+.lang-menu:hover ul {
+    display: block;
 }
 ::placeholder { 
+    padding-left: 10%;
     color: #fff;
-    opacity: 1; 
+    opacity: 0.8; 
   }
+.sth{
+    margin-left: 67%;
+    padding-top: 2px;
+}
 #main-content{
     height: 1000px;             /*excluding sidebar entire screen*/
     width:85%;
@@ -89,6 +181,9 @@ input.search-bar{           /*searchbar of navbar*/
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.right{              /*right part of card*/
+    margin-left: 220px;
+}
 .card-box{
     width: 300px;
     height: 18vh;
@@ -103,7 +198,7 @@ input.search-bar{           /*searchbar of navbar*/
 }
 .pro-table{
     border-radius: 5px;
-    width: 65%;
+    width: 64%;
     float: left;
     background-color: #2E3648;
     padding: 15px;
@@ -113,3 +208,4 @@ input.search-bar{           /*searchbar of navbar*/
 table td{
     padding: 25px 0px 0px 0px;
 }
+
