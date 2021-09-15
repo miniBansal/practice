@@ -5,16 +5,8 @@
     list-style-type:none;
     text-decoration: none;
 }
-.container{
-    max-width: 1330px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.clear{
-    clear:both;
-}
-#sidebar{
+
+#sidebar{          /*entire sidebar area (takes 15% width of screen)*/
     width:15%;
     height:100%;
     background-color: #2E3648;
@@ -23,12 +15,16 @@
     left:0;
     color:#fff;
 }
-.sidebar-brand{
+.sidebar-brand{   /*sidebar logo FIFO*/
     padding: 0.25% 30%;
     color: #626ED4;
     padding-bottom: 10%;
 }
-.sidebar-menu ul li a{
+.link-text{             /*space between sidebar icons and sidebar list content*/
+    margin-left: 10%;
+}
+
+.sidebar-menu ul li a{   /*sidebar list elements*/
     display:block;
     color: #fff;
     padding-left: 7%;
@@ -45,13 +41,13 @@
 .sidebar-menu li:hover{
     background-color: rgba(0,0,0,0.5);
 }
-.main-header{
+.main-header{               /*navbar*/
     position: fixed;
     background-color: #36394C;
     width: 100%;
-    height: 8%;
+    height: 7%;
 }
-.header-left{
+.header-left{               /*left part of navbarv(hamburger)*/
     float: left;
     width: 40%;
     padding-top: 0.1%;
@@ -59,37 +55,49 @@
     color: #fff;
 }
 
-.header-right{
+.header-right{              /*right part of navbar*/
     float: right;
     width: 60%;
     padding:20px;
     color: #fff;
 }
-input.search-bar{
+input.search-bar{           /*searchbar of navbar*/
     width: 20%;
     height: 30px;
     background-color: #363E54;
     border-radius: 20px;  
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
     color: #fff;
-    opacity: 1; /* Firefox */
+    opacity: 1; 
   }
 #main-content{
+    height: 1000px;             /*excluding sidebar entire screen*/
     width:85%;
     float:right;
     background-color: #222736;
 }
-.card-box{
-    float: left;
-    width: 24%;
-    margin-top: 100px;
-    margin-bottom: 2%;
-    border-radius: 3%;
-    background-color: #626ED4;
-    color: #fff;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    padding: 18px;
+.space{
+    background-color: #222736;
+    padding-top: 6%;
 }
+.cards{
 
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-box{
+    width: 300px;
+    height: 18vh;
+    background: #626ED4;
+    margin: 3px 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: top;
+    border-radius: 5px;
+    flex-direction: column;
+    color: #fff;
+}
