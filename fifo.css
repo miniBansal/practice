@@ -101,3 +101,11 @@ input.search-bar{           /*searchbar of navbar*/
     flex-direction: column;
     color: #fff;
 }
+.pro-table{
+    width: 65%;
+    float: left;
+    background-color: #36394C;
+    padding: 15px;
+    margin-left: 16px;
+    color: white;
+}
